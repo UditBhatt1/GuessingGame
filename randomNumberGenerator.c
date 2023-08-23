@@ -10,7 +10,7 @@ void guessingGame()
 {
     int randomNumber = numberGenerator(); // generating random number (0-100)
     int input;
-    printf("Guess the number: ");
+    printf("Guess a number between 0 and 100: ");
     scanf("%d", &input); // taking input
 
     // testing the input
