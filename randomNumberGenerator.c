@@ -1,18 +1,19 @@
 #include "./randomNumberGenerator.h"
 int numberGenerator()
 {
-    srand(time(NULL));
-    int randomNumber = rand() % 101;
+    srand(time(NULL));               // fetching current time
+    int randomNumber = rand() % 101; // divide by max + 1
     return randomNumber;
 }
 
 void guessingGame()
 {
-    int randomNumber = numberGenerator();
+    int randomNumber = numberGenerator(); // generating random number (0-100)
     int input;
     printf("Guess the number: ");
-    scanf("%d", &input);
+    scanf("%d", &input); // taking input
 
+    // testing the input
     while (input != randomNumber)
     {
         if (input < randomNumber)
