@@ -1,9 +1,0 @@
-{
-    "makefile.launchConfigurations": [
-        {
-            "cwd": "c:\\Users\\UDIT\\Desktop\\Guessing_Game",
-            "binaryPath": "c:\\Users\\UDIT\\Desktop\\Guessing_Game\\randomNumberGenerator",
-            "binaryArgs": []
-        }
-    ]
-}
