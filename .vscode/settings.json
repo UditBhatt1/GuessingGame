@@ -5,8 +5,5 @@
             "binaryPath": "c:\\Users\\UDIT\\Desktop\\Guessing_Game\\randomNumberGenerator",
             "binaryArgs": []
         }
-    ],
-    "files.associations": {
-        "randomnumbergenerator.h": "c"
-    }
+    ]
 }

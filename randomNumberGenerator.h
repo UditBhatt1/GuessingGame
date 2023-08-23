@@ -3,3 +3,4 @@
 #include <time.h>
 
 int numberGenerator();
+void guessingGame();
