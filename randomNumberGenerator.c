@@ -10,12 +10,15 @@ void guessingGame()
 {
     int randomNumber = numberGenerator(); // generating random number (0-100)
     int input;
+    int steps = 1;
+
     printf("Guess a number between 0 and 100: ");
     scanf("%d", &input); // taking input
 
     // testing the input
     while (input != randomNumber)
-    {
+    {   
+        steps += 1;
         if (input < randomNumber)
         {
             printf("Too small");
@@ -28,9 +31,13 @@ void guessingGame()
             printf("\nTry again: ");
             scanf("%d", &input);
         }
-    }
     if (input == randomNumber)
     {
-        printf("Yay! You guessed it correct");
+        printf("\nYay! You guessed it correct");
+        printf("\nYou guessed in %d steps", steps);
+        break;
     }
+
+  }
+
 }
