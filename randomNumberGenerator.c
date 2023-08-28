@@ -17,7 +17,7 @@ void guessingGame()
 
     // testing the input
     while (input != randomNumber)
-    {   
+    {
         steps += 1;
         if (input < randomNumber)
         {
@@ -31,13 +31,11 @@ void guessingGame()
             printf("\nTry again: ");
             scanf("%d", &input);
         }
-    if (input == randomNumber)
-    {
-        printf("\nYay! You guessed it correct");
-        printf("\nYou guessed in %d steps", steps);
-        break;
+        if (input == randomNumber)
+        {
+            printf("\nYay! You guessed it correct");
+            printf("\nYou guessed in %d steps", steps);
+            break;
+        }
     }
-
-  }
-
 }
