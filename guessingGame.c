@@ -1,6 +1,6 @@
 #include "./guessingGame.h"
 
-int numberGenerator()
+int randomNumberGenerator()
 {
     srand(time(NULL));               // fetching current time
     int randomNumber = rand() % 101; // divide by max + 1
@@ -9,7 +9,7 @@ int numberGenerator()
 
 void guessingGame()
 {
-    int randomNumber = numberGenerator(); // generating random number (0-100)
+    int randomNumber = randomNumberGenerator(); // generating random number (0-100)
     int input;
     int steps = 1;
 
