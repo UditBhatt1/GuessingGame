@@ -1,2 +1,2 @@
-GuessingGame : main.c randomNumberGenerator.c
-	gcc -o GuessingGame main.c randomNumberGenerator.c 
+GuessingGame : main.c guessingGame.c
+	gcc -o GuessingGame main.c guessingGame.c 
