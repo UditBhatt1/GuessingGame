@@ -18,19 +18,17 @@ void guessingGame()
     // testing the input
     while (input != randomNumber)
     {
-        steps += 1;
+        steps++;
 
         if (input < 0)
-            printf("Number cannot be negative");
+            printf("Number cannot be negative \nTry again: ");
 
-        if (input < randomNumber)
-        {
-            printf("Too small \nTry again:");
-        }
+        if (input < randomNumber && !(input < 0))
+            printf("Too small \nTry again: ");
+
         else if (input > randomNumber)
-        {
-            printf("Too big \n Try again: ");
-        }
+            printf("Too big \nTry again: ");
+
         scanf("%d", &input);
     }
     printf("\nYay, You guessed it correct in %d steps", steps);
