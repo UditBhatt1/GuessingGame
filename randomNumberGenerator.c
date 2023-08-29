@@ -26,13 +26,12 @@ void guessingGame()
         if (input < randomNumber)
         {
             printf("Too small \nTry again:");
-            scanf("%d", &input);
         }
         else if (input > randomNumber)
         {
             printf("Too big \n Try again: ");
-            scanf("%d", &input);
         }
+        scanf("%d", &input);
     }
     printf("\nYay, You guessed it correct in %d steps", steps);
 }
