@@ -11,26 +11,33 @@ void guessingGame()
 {
     int randomNumber = randomNumberGenerator(); // generating random number (0-100)
     int input;
-    int steps = 1;
+    int steps = 4;
 
     printf("Guess a number between 0 and 100: ");
     scanf("%d", &input); // taking input
 
     // testing the input
-    while (input != randomNumber)
-    {
-        steps++;
-
+   
+      while (input != randomNumber && steps != 0)
+      { 
+        steps--;
+        
         if (input < 0)
-            printf("Number cannot be negative \nTry again: ");
+          printf("Number cannot be negative \nTry again: ");
 
         if (input < randomNumber && !(input < 0))
-            printf("Too small \nTry again: ");
+            printf("Too small (%d try left)  \nTry again: ", steps);
 
         else if (input > randomNumber)
-            printf("Too big \nTry again: ");
+            printf("Too big (%d try left)  \nTry again: ", steps);
 
         scanf("%d", &input);
     }
-    printf("\nYay, You guessed it correct in %d steps", steps);
+  
+    
+    if(input == randomNumber )    
+      printf("\nYay, You guessed it correct");
+    else {  
+      printf("You lost, Start again");
+    }     
 }
