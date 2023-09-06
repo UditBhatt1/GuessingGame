@@ -19,7 +19,8 @@ void guessingGame()
     // testing the input
    
       while (input != randomNumber && steps != 0)
-      { 
+      {
+        // reducing steps each round
         steps--;
         
         if (input < 0)
